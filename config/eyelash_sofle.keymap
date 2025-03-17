@@ -91,17 +91,17 @@
     combos {
         compatible = "zmk,combos";
         combo_slash {
-            key-positions = <38 43 20>;
+            key-positions = <28 44 22>;
             layers=<0>;
             bindings=<&kp SLASH>;
         };
         combo_bkslash {
-            key-positions = <38 45 20>;
+            key-positions = <28 46 22>;
             layers=<0>;
             bindings=<&kp BSLH>;
         };
         combo_lt_1_right {
-            key-positions = <14 26>;
+            key-positions = <28 15>;
             layers=<0>;
             bindings=<&mo 1>;
         };
