@@ -91,52 +91,52 @@
     combos {
         compatible = "zmk,combos";
         combo_slash {
-            key-positions = <28 34 22>;
+            key-positions = <2 8 0>;
             layers=<0>;
             bindings=<&kp SLASH>;
         };
         combo_bkslash {
-            key-positions = <28 36 22>;
+            key-positions = <15 23 9>;
             layers=<0>;
             bindings=<&kp BSLH>;
         };
         combo_lt_1_right {
-            key-positions = <29 16>;
+            key-positions = <16 3>;
             layers=<0>;
             bindings=<&mo 1>;
         };
         combo_lt_1_left {
-            key-positions = <35 22>;
+            key-positions = <22 9>;
             layers=<0>;
             bindings=<&mo 1>;
         };
         combo_lpar {
-            key-positions = <15 28 34>;
+            key-positions = <2 15 21>;
             layers=<0>;
             bindings = <&kp LPAR>;
         };
         combo_rpar {
-            key-positions = <15 28 47>;
+            key-positions = <2 15 34>;
             layers=<0>;
             bindings = <&kp RPAR>;
         };
         combo_lbkt {
-            key-positions = <15 28 35>;
+            key-positions = <2 15 22>;
             layers=<0>;
             bindings = <&kp LBKT>;
         };
         combo_rbkt {
-            key-positions = <15 28 48>;
+            key-positions = <2 15 35>;
             layers=<0>;
             bindings = <&kp RBKT>;
         };
         combo_lbrc {
-            key-positions = <15 28 36>;
+            key-positions = <2 15 23>;
             layers=<0>;
             bindings = <&kp LBRC>;
         };
         combo_rbrc {
-            key-positions = <15 28 49>;
+            key-positions = <2 15 36>;
             layers=<0>;
             bindings = <&kp RBRC>;
         };
