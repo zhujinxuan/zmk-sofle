@@ -91,7 +91,7 @@
     combos {
         compatible = "zmk,combos";
         combo_slash {
-            key-positions = <2 8 0>;
+            key-positions = <15 21 9>;
             layers=<0>;
             bindings=<&kp SLASH>;
         };
