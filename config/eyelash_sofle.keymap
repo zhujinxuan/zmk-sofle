@@ -105,5 +105,10 @@
             layers=<0>;
             bindings=<&mo 1>;
         };
+        combo_lt_1_left {
+            key-positions = <35 22>;
+            layers=<0>;
+            bindings=<&mo 1>;
+        };
     };
 };
