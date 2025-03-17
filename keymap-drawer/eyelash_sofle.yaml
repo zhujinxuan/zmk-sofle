@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
-  - {t: '[', h: '2', s: '{'}
+  - {t: '-', h: '2', s: _}
   - {t: '''', s: '"'}
   - {t: ',', s: <}
   - {t: ., s: '>'}
@@ -13,7 +13,7 @@ layers:
   - C
   - R
   - V
-  - {t: ']', h: '2', s: '}'}
+  - {t: _, h: '2'}
   - {t: /, h: layer1, s: '?'}
   - A
   - O
@@ -69,13 +69,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
-  - '#'
+  - {t: '#', type: held alternate}
   - $
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '=', s: +}
   - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
+  - {t: '8', s: '*', type: held alternate}
   - {t: '9', s: (}
   - {t: '-', s: _}
   - (
@@ -95,13 +95,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '*'
   - (
-  - {t: '$$mdi:arrow-down-bold$$', type: held alternate}
+  - $$mdi:arrow-down-bold$$
   - )
   - RGB SPI
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - +
   - {t: '1', s: '!'}
-  - {t: '2', s: '@', type: held alternate}
+  - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -261,33 +261,39 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [28, 34, 22]
+- p: [15, 21, 9]
   k: {t: /, s: '?'}
   l: [LAYER0]
-- p: [28, 36, 22]
+- p: [15, 23, 9]
   k: {t: \, s: '|'}
   l: [LAYER0]
-- p: [29, 16]
+- p: [16, 3]
   k: layer1
   l: [LAYER0]
-- p: [35, 22]
+- p: [22, 9]
   k: layer1
   l: [LAYER0]
-- p: [15, 28, 34]
+- p: [2, 15, 21]
   k: (
   l: [LAYER0]
-- p: [15, 28, 47]
+- p: [2, 15, 34]
   k: )
   l: [LAYER0]
-- p: [15, 28, 35]
+- p: [2, 15, 22]
   k: {h: '[', s: '{'}
   l: [LAYER0]
-- p: [15, 28, 48]
+- p: [2, 15, 35]
   k: {h: ']', s: '}'}
   l: [LAYER0]
-- p: [15, 28, 36]
+- p: [2, 15, 23]
   k: '{'
   l: [LAYER0]
-- p: [15, 28, 49]
+- p: [2, 15, 36]
   k: '}'
+  l: [LAYER0]
+- p: [16, 9, 10]
+  k: {h: '-', s: _}
+  l: [LAYER0]
+- p: [16, 35, 36]
+  k: _
   l: [LAYER0]
