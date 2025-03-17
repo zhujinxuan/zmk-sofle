@@ -88,7 +88,7 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '=', s: +}
   - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
+  - {t: '8', s: '*', type: held alternate}
   - {t: '9', s: (}
   - {t: '-', s: _}
   - (
@@ -101,7 +101,7 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '0', s: )}
   - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - {t: '5', s: '%', type: held alternate}
   - {t: '6', s: ^}
   - '*'
   - {t: ), type: held alternate}
@@ -268,5 +268,8 @@ combos:
   k: {t: \, s: '|'}
   l: [LAYER0]
 - p: [28, 15]
+  k: layer1
+  l: [LAYER0]
+- p: [35, 22]
   k: layer1
   l: [LAYER0]
