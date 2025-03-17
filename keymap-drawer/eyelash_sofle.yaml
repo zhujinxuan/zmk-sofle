@@ -82,26 +82,26 @@ layers:
   - {type: held}
   - ^
   - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:arrow-up-bold$$', type: held alternate}
   - $$mdi:arrow-right-bold$$
   - '&'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '0', s: )}
   - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - {t: '5', s: '%', type: held alternate}
   - {t: '6', s: ^}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: ), type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - '*'
   - (
-  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:arrow-down-bold$$', type: held alternate}
   - )
   - RGB SPI
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - +
   - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
+  - {t: '2', s: '@', type: held alternate}
   - {t: '3', s: '#'}
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -260,3 +260,34 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [28, 34, 22]
+  k: {t: /, s: '?'}
+  l: [LAYER0]
+- p: [28, 36, 22]
+  k: {t: \, s: '|'}
+  l: [LAYER0]
+- p: [29, 16]
+  k: layer1
+  l: [LAYER0]
+- p: [35, 22]
+  k: layer1
+  l: [LAYER0]
+- p: [15, 28, 34]
+  k: (
+  l: [LAYER0]
+- p: [15, 28, 47]
+  k: )
+  l: [LAYER0]
+- p: [15, 28, 35]
+  k: {h: '[', s: '{'}
+  l: [LAYER0]
+- p: [15, 28, 48]
+  k: {h: ']', s: '}'}
+  l: [LAYER0]
+- p: [15, 28, 36]
+  k: '{'
+  l: [LAYER0]
+- p: [15, 28, 49]
+  k: '}'
+  l: [LAYER0]
