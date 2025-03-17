@@ -274,10 +274,10 @@ combos:
   k: layer1
   l: [LAYER0]
 - p: [15, 28, 34]
-  k: '&key LPAR'
+  k: (
   l: [LAYER0]
 - p: [15, 28, 47]
-  k: '&key RPAR'
+  k: )
   l: [LAYER0]
 - p: [15, 28, 35]
   k: {h: '[', s: '{'}
@@ -286,8 +286,8 @@ combos:
   k: {h: ']', s: '}'}
   l: [LAYER0]
 - p: [15, 28, 36]
-  k: '&key LBRC'
+  k: '{'
   l: [LAYER0]
 - p: [15, 28, 49]
-  k: '&key RBRC'
+  k: '}'
   l: [LAYER0]
