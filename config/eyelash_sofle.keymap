@@ -113,32 +113,32 @@
         combo_lpar {
             key-positions = <15 28 34>;
             layers=<0>;
-            bindings = <&key LPAR>;
+            bindings = <&kp LPAR>;
         };
         combo_rpar {
             key-positions = <15 28 47>;
             layers=<0>;
-            bindings = <&key RPAR>;
+            bindings = <&kp RPAR>;
         };
         combo_lbkt {
             key-positions = <15 28 35>;
             layers=<0>;
-            bindings = <&key LBKT>;
+            bindings = <&kp LBKT>;
         };
         combo_rbkt {
             key-positions = <15 28 48>;
             layers=<0>;
-            bindings = <&key RBKT>;
+            bindings = <&kp RBKT>;
         };
         combo_lbrc {
             key-positions = <15 28 36>;
             layers=<0>;
-            bindings = <&key LBRC>;
+            bindings = <&kp LBRC>;
         };
         combo_rbrc {
             key-positions = <15 28 49>;
             layers=<0>;
-            bindings = <&key RBRC>;
+            bindings = <&kp RBRC>;
         };
     };
 };
