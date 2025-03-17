@@ -43,10 +43,10 @@
         layer0 {
             bindings = <
 &kp ESC     &kp N1     &kp N2        &kp N3         &kp N4            &kp N5      &kp UP_ARROW     &kp N6      &kp N7           &kp N8              &kp N9           &kp N0          &kp BACKSPACE
-&kp TAB     &kp SQT    &kp COMMA     &kp DOT        &kp P             &kp Y       &kp DOWN_ARROW   &kp F       &kp G            &kp C               &kp R            &kp V           &kp BSLH
-&kp CAPS    &kp A      &kp O         &kp E          &kp U             &kp I       &kp LEFT_ARROW   &kp D       &kp H            &kp T               &kp N            &kp S           &kp APOS
-&kp LSHFT   &kp COLON  &kp Q         &kp J          &kp K             &kp X       &kp RIGHT_ARROW  &kp B       &kp L            &kp M               &kp W            &kp Z           &kp ENTER
-&kp C_MUTE  &sk LCTRL  &sk LALT      &mt LGUI TAB   &mt LSHFT ESC     &lt 2 LBRT  &kp ENTER        &lt 2 RBRT  &mt RSFT SPACE  &mt RCTRL ENTER      &kp RIGHT_SHIFT  &kp RESET
+&lt 2 LBRT  &kp SQT    &kp COMMA     &kp DOT        &kp P             &kp Y       &kp DOWN_ARROW   &kp F       &kp G            &kp C               &kp R            &kp V           &lt 2 RBRT
+&lt 1 SLASH &kp A      &kp O         &kp E          &kp U             &kp I       &kp LEFT_ARROW   &kp D       &kp H            &kp T               &kp N            &kp S           &lt 1 BSLH
+&kp GRAVE   &kp COLON  &kp Q         &kp J          &kp K             &kp X       &kp RIGHT_ARROW  &kp B       &kp L            &kp M               &kp W            &kp Z           &kp TILDE
+&kp C_MUTE  &sk LCTRL  &sk LALT      &mt LGUI TAB   &mt LSHFT ESC     &lt 1 LPAR  &kp ENTER        &lt 1 RPAR  &mt RSFT SPACE  &mt RCTRL ENTER      &kp RIGHT_SHIFT  &kp C_RESET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -56,8 +56,8 @@
         layer_1 {
             bindings = <
 &kp F11     &kp F1      &kp F2            &kp F3           &kp F4             &kp F5               &mmv MOVE_UP         &kp F6        &kp F7     &kp F8      &kp F9     &kp F10          &F12
-&trans      &kp EXCEL   &kp AT            &kp HASH         &kp DOLLAR         &kp PERCENT          &mmv MOVE_DOWN       &kp EQUAL     &kp N7     &kp N8      &kp N9     &kp MINUS        &kp EQUAL
-&trans      &kp CARET   &kp LEFT_ARROW    &kp UP_ARROW     &kp RIGHT_ARROW    &kp AMPS             &mmv MOVE_LEFT       &kp N0        &kp N4     &kp N5      &kp N6     &kp STAR         &kp RIGHT_BRACKET
+&trans      &kp EXCL    &kp AT            &kp HASH         &kp DOLLAR         &kp PERCENT          &mmv MOVE_DOWN       &kp EQUAL     &kp N7     &kp N8      &kp N9     &kp MINUS        &kp LPAR
+&trans      &kp CARET   &kp LEFT_ARROW    &kp UP_ARROW     &kp RIGHT_ARROW    &kp AMPS             &mmv MOVE_LEFT       &kp N0        &kp N4     &kp N5      &kp N6     &kp STAR         &kp RPAR
 &trans      &kp STAR    &kp LPAR          &kp DOWN_ARROW   &kp RPAR           &rgb_ug RGB_SPI      &mmv MOVE_RIGHT      &kp PLUS      &kp N1     &kp N2      &kp N3     &kp SLASH        &trans
 &kp C_MUTE  &trans      &trans            &trans            &trans            &trans               &mkp LCLK            &trans        &trans     &trans      &trans     &trans
             >;
@@ -86,6 +86,24 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+        };
+    };
+    combos {
+        compatible = "zmk,combos";
+        combo_slash = {
+            key-positions = <38 43 20>;
+            layers=<0>;
+            bindings=<&kp SLASH>
+        };
+        combo_bkslash = {
+            key-positions = <38 45 20>;
+            layers=<0>;
+            bindings=<&kp BSLH>
+        };
+        combo_lt_1_right = {
+            key-positions = <14 26>;
+            layers=<0>;
+            bindings=<&mo 1>
         };
     };
 };
