@@ -91,17 +91,17 @@
     combos {
         compatible = "zmk,combos";
         combo_slash {
-            key-positions = <28 44 22>;
+            key-positions = <28 34 22>;
             layers=<0>;
             bindings=<&kp SLASH>;
         };
         combo_bkslash {
-            key-positions = <28 46 22>;
+            key-positions = <28 36 22>;
             layers=<0>;
             bindings=<&kp BSLH>;
         };
         combo_lt_1_right {
-            key-positions = <28 15>;
+            key-positions = <29 16>;
             layers=<0>;
             bindings=<&mo 1>;
         };
@@ -109,6 +109,36 @@
             key-positions = <35 22>;
             layers=<0>;
             bindings=<&mo 1>;
+        };
+        combo_lpar {
+            key-positions = <15 28 34>;
+            layers=<0>;
+            bindings = <&key LPAR>;
+        };
+        combo_rpar {
+            key-positions = <15 28 47>;
+            layers=<0>;
+            bindings = <&key RPAR>;
+        };
+        combo_lbkt {
+            key-positions = <15 28 35>;
+            layers=<0>;
+            bindings = <&key LBKT>;
+        };
+        combo_rbkt {
+            key-positions = <15 28 48>;
+            layers=<0>;
+            bindings = <&key RBKT>;
+        };
+        combo_lbrc {
+            key-positions = <15 28 36>;
+            layers=<0>;
+            bindings = <&key LBRC>;
+        };
+        combo_rbrc {
+            key-positions = <15 28 49>;
+            layers=<0>;
+            bindings = <&key RBRC>;
         };
     };
 };
