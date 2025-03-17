@@ -81,8 +81,8 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
-  - {t: '@', type: held alternate}
-  - '#'
+  - '@'
+  - {t: '#', type: held alternate}
   - $
   - '%'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -94,8 +94,8 @@ layers:
   - (
   - {type: held}
   - ^
-  - {t: '$$mdi:arrow-left-bold$$', type: held alternate}
-  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:arrow-up-bold$$', type: held alternate}
   - $$mdi:arrow-right-bold$$
   - '&'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -261,15 +261,33 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [28, 44, 22]
+- p: [28, 34, 22]
   k: {t: /, s: '?'}
   l: [LAYER0]
-- p: [28, 46, 22]
+- p: [28, 36, 22]
   k: {t: \, s: '|'}
   l: [LAYER0]
-- p: [28, 15]
+- p: [29, 16]
   k: layer1
   l: [LAYER0]
 - p: [35, 22]
   k: layer1
+  l: [LAYER0]
+- p: [15, 28, 34]
+  k: '&key LPAR'
+  l: [LAYER0]
+- p: [15, 28, 47]
+  k: '&key RPAR'
+  l: [LAYER0]
+- p: [15, 28, 35]
+  k: {h: '[', s: '{'}
+  l: [LAYER0]
+- p: [15, 28, 48]
+  k: {h: ']', s: '}'}
+  l: [LAYER0]
+- p: [15, 28, 36]
+  k: '&key LBRC'
+  l: [LAYER0]
+- p: [15, 28, 49]
+  k: '&key RBRC'
   l: [LAYER0]
