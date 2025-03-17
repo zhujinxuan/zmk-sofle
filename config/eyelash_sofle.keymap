@@ -140,5 +140,15 @@
             layers=<0>;
             bindings = <&kp RBRC>;
         };
+        combo_minus {
+            key-positions = <15 9 10>;
+            layers = <0>;
+            bindings = <&kp MINUS>;
+        };
+        combo_minus {
+            key-positions = <15 35 36>;
+            layers = <0>;
+            bindings = <&kp UNDER>;
+        };
     };
 };
