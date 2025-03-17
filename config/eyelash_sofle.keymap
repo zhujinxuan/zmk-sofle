@@ -45,7 +45,7 @@
 &kp ESC     &kp N1     &kp N2        &kp N3         &kp N4            &kp N5      &kp UP_ARROW     &kp N6      &kp N7           &kp N8              &kp N9           &kp N0          &kp BACKSPACE
 &lt 2 LBKT  &kp SQT    &kp COMMA     &kp DOT        &kp P             &kp Y       &kp DOWN_ARROW   &kp F       &kp G            &kp C               &kp R            &kp V           &lt 2 RBKT
 &lt 1 SLASH &kp A      &kp O         &kp E          &kp U             &kp I       &kp LEFT_ARROW   &kp D       &kp H            &kp T               &kp N            &kp S           &lt 1 BSLH
-&kp GRAVE   &kp COLON  &kp Q         &kp J          &kp K             &kp X       &kp RIGHT_ARROW  &kp B       &kp L            &kp M               &kp W            &kp Z           &kp TILDE
+&lt 3 GRAVE &kp COLON  &kp Q         &kp J          &kp K             &kp X       &kp RIGHT_ARROW  &kp B       &kp L            &kp M               &kp W            &kp Z           &lt 3 TILDE
 &kp C_MUTE  &sk LCTRL  &sk LALT      &mt LGUI TAB   &mt LSHFT ESC     &lt 1 LPAR  &kp ENTER        &lt 1 RPAR  &mt RSFT SPACE  &mt RCTRL ENTER      &kp RIGHT_SHIFT  &kp C_RESET
             >;
 
@@ -57,7 +57,7 @@
             bindings = <
 &kp F11     &kp F1      &kp F2            &kp F3           &kp F4             &kp F5               &mmv MOVE_UP         &kp F6        &kp F7     &kp F8      &kp F9     &kp F10          &kp F12
 &trans      &kp EXCL    &kp AT            &kp HASH         &kp DOLLAR         &kp PERCENT          &mmv MOVE_DOWN       &kp EQUAL     &kp N7     &kp N8      &kp N9     &kp MINUS        &kp LPAR
-&trans      &kp CARET   &kp LEFT_ARROW    &kp UP_ARROW     &kp RIGHT_ARROW    &kp AMPS             &mmv MOVE_LEFT       &kp N0        &kp N4     &kp N5      &kp N6     &kp STAR         &kp RPAR
+&trans      &kp CARET   &kp LEFT_ARROW    &kp UP_ARROW     &kp RIGHT_ARROW    &kp AMPS             &mmv MOVE_LEFT       &kp N0        &kp N4     &kp N5      &kp N6     &kp BACKSPACE    &kp RPAR
 &trans      &kp STAR    &kp LPAR          &kp DOWN_ARROW   &kp RPAR           &rgb_ug RGB_SPI      &mmv MOVE_RIGHT      &kp PLUS      &kp N1     &kp N2      &kp N3     &kp SLASH        &trans
 &kp C_MUTE  &trans      &trans            &trans            &trans            &trans               &mkp LCLK            &trans        &trans     &trans      &trans     &trans
             >;
