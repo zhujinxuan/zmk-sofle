@@ -90,17 +90,17 @@
     };
     combos {
         compatible = "zmk,combos";
-        combo_slash = {
+        combo_slash {
             key-positions = <38 43 20>;
             layers=<0>;
             bindings=<&kp SLASH>;
         };
-        combo_bkslash = {
+        combo_bkslash {
             key-positions = <38 45 20>;
             layers=<0>;
             bindings=<&kp BSLH>;
         };
-        combo_lt_1_right = {
+        combo_lt_1_right {
             key-positions = <14 26>;
             layers=<0>;
             bindings=<&mo 1>;
