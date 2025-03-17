@@ -42,11 +42,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
-&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
+&kp ESC     &kp N1     &kp N2        &kp N3         &kp N4            &kp N5      &kp UP_ARROW     &kp N6      &kp N7           &kp N8              &kp N9           &kp N0          &kp BACKSPACE
+&lt 2 LBKT  &kp SQT    &kp COMMA     &kp DOT        &kp P             &kp Y       &kp DOWN_ARROW   &kp F       &kp G            &kp C               &kp R            &kp V           &lt 2 RBKT
+&lt 1 SLASH &kp A      &kp O         &kp E          &kp U             &kp I       &kp LEFT_ARROW   &kp D       &kp H            &kp T               &kp N            &kp S           &lt 1 BSLH
+&lt 3 GRAVE &kp COLON  &kp Q         &kp J          &kp K             &kp X       &kp RIGHT_ARROW  &kp B       &kp L            &kp M               &kp W            &kp Z           &lt 3 TILDE
+&kp C_MUTE  &sk LCTRL  &sk LALT      &mt LGUI TAB   &mt LSHFT ESC     &lt 1 LPAR  &kp ENTER        &lt 1 RPAR  &mt RSFT SPACE  &mt RCTRL ENTER      &kp RIGHT_SHIFT  &kp C_RESET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -55,11 +55,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp F11     &kp F1      &kp F2            &kp F3           &kp F4             &kp F5               &mmv MOVE_UP         &kp F6        &kp F7     &kp F8      &kp F9     &kp F10          &kp F12
+&trans      &kp EXCL    &kp AT            &kp HASH         &kp DOLLAR         &kp PERCENT          &mmv MOVE_DOWN       &kp EQUAL     &kp N7     &kp N8      &kp N9     &kp MINUS        &kp LPAR
+&trans      &kp CARET   &kp LEFT_ARROW    &kp UP_ARROW     &kp RIGHT_ARROW    &kp AMPS             &mmv MOVE_LEFT       &kp N0        &kp N4     &kp N5      &kp N6     &kp BACKSPACE    &kp RPAR
+&trans      &kp STAR    &kp LPAR          &kp DOWN_ARROW   &kp RPAR           &rgb_ug RGB_SPI      &mmv MOVE_RIGHT      &kp PLUS      &kp N1     &kp N2      &kp N3     &kp SLASH        &trans
+&kp C_MUTE  &trans      &trans            &trans            &trans            &trans               &mkp LCLK            &trans        &trans     &trans      &trans     &trans
             >;
 
             display-name = "layer1";
@@ -86,6 +86,59 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+        };
+    };
+    combos {
+        compatible = "zmk,combos";
+        combo_slash {
+            key-positions = <28 34 22>;
+            layers=<0>;
+            bindings=<&kp SLASH>;
+        };
+        combo_bkslash {
+            key-positions = <28 36 22>;
+            layers=<0>;
+            bindings=<&kp BSLH>;
+        };
+        combo_lt_1_right {
+            key-positions = <29 16>;
+            layers=<0>;
+            bindings=<&mo 1>;
+        };
+        combo_lt_1_left {
+            key-positions = <35 22>;
+            layers=<0>;
+            bindings=<&mo 1>;
+        };
+        combo_lpar {
+            key-positions = <15 28 34>;
+            layers=<0>;
+            bindings = <&kp LPAR>;
+        };
+        combo_rpar {
+            key-positions = <15 28 47>;
+            layers=<0>;
+            bindings = <&kp RPAR>;
+        };
+        combo_lbkt {
+            key-positions = <15 28 35>;
+            layers=<0>;
+            bindings = <&kp LBKT>;
+        };
+        combo_rbkt {
+            key-positions = <15 28 48>;
+            layers=<0>;
+            bindings = <&kp RBKT>;
+        };
+        combo_lbrc {
+            key-positions = <15 28 36>;
+            layers=<0>;
+            bindings = <&kp LBRC>;
+        };
+        combo_rbrc {
+            key-positions = <15 28 49>;
+            layers=<0>;
+            bindings = <&kp RBRC>;
         };
     };
 };
