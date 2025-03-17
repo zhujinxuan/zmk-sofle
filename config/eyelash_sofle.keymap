@@ -55,7 +55,7 @@
 
         layer_1 {
             bindings = <
-&kp F11     &kp F1      &kp F2            &kp F3           &kp F4             &kp F5               &mmv MOVE_UP         &kp F6        &kp F7     &kp F8      &kp F9     &kp F10          &F12
+&kp F11     &kp F1      &kp F2            &kp F3           &kp F4             &kp F5               &mmv MOVE_UP         &kp F6        &kp F7     &kp F8      &kp F9     &kp F10          &kp F12
 &trans      &kp EXCL    &kp AT            &kp HASH         &kp DOLLAR         &kp PERCENT          &mmv MOVE_DOWN       &kp EQUAL     &kp N7     &kp N8      &kp N9     &kp MINUS        &kp LPAR
 &trans      &kp CARET   &kp LEFT_ARROW    &kp UP_ARROW     &kp RIGHT_ARROW    &kp AMPS             &mmv MOVE_LEFT       &kp N0        &kp N4     &kp N5      &kp N6     &kp STAR         &kp RPAR
 &trans      &kp STAR    &kp LPAR          &kp DOWN_ARROW   &kp RPAR           &rgb_ug RGB_SPI      &mmv MOVE_RIGHT      &kp PLUS      &kp N1     &kp N2      &kp N3     &kp SLASH        &trans
