@@ -145,7 +145,7 @@
             layers = <0>;
             bindings = <&kp MINUS>;
         };
-        combo_minus {
+        combo_under {
             key-positions = <15 35 36>;
             layers = <0>;
             bindings = <&kp UNDER>;
