@@ -106,7 +106,7 @@
             bindings=<&kp BSLH>;
         };
         combo_pipe {
-            key-positions = <15 23 9>;
+            key-positions = <17 23 10>;
             layers=<0>;
             bindings=<&kp PIPE>;
         };
