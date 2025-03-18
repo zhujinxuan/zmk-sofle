@@ -58,9 +58,9 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: (, h: layer1}
+  - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: ), h: layer1}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: RSFT}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-shift$$
@@ -123,9 +123,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -264,8 +264,14 @@ combos:
 - p: [15, 21, 9]
   k: {t: /, s: '?'}
   l: [LAYER0]
+- p: [15, 21, 8]
+  k: '?'
+  l: [LAYER0]
 - p: [15, 23, 9]
   k: {t: \, s: '|'}
+  l: [LAYER0]
+- p: [17, 23, 10]
+  k: '|'
   l: [LAYER0]
 - p: [16, 3]
   k: layer1
@@ -291,9 +297,9 @@ combos:
 - p: [2, 15, 36]
   k: '}'
   l: [LAYER0]
-- p: [16, 9, 10]
+- p: [15, 8, 9]
   k: {h: '-', s: _}
   l: [LAYER0]
-- p: [16, 35, 36]
+- p: [16, 9, 10]
   k: _
   l: [LAYER0]
