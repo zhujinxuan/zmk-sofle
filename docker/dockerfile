@@ -1,0 +1,53 @@
+# Use the local build from zmk.dockerfile
+FROM dev AS zmk-build
+# Use the official ZMK build image that includes Zephyr, west, and other dependencies
+# FROM m.daocloud.io/docker.io/library/zmkfirmware/zmk-build-arm:stable
+
+# Optionally allow the board to be specified at build time
+ARG BOARD
+ENV BOARD=${BOARD:-"eyelash_sofle"}
+
+# Set the working directory inside the container
+WORKDIR /workspace
+
+# Copy your ZMK repository or your keymap configuration directory into the container.
+# This assumes that your repository has the ZMK source (including the "zmk/app" directory)
+# and a "config" directory with your keymap.
+COPY . /workspace
+
+# Initialize West with your config directory and update all modules.
+# The steps below mirror the GitHub Action: initialize, update, and export Zephyr.
+RUN west init -l config && \
+    west update && \
+    west zephyr-export
+
+# Build the firmware:
+# - The source for the firmware is in "zmk/app"
+# - The build directory is "build"
+# - "-DZMK_CONFIG" points to your configuration directory
+RUN west build -s zmk/app -d build -b $BOARD -- -DZMK_CONFIG=/workspace/config
+
+# Optionally, add an entrypoint so you get a shell if needed.
+CMD ["/bin/bash"]
+
+# Install additional dependencies
+RUN apt-get update && apt-get install -y \
+    python3-pip \
+    jq \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install yaml2json converter (remarshal)
+RUN python3 -m pip install remarshal
+
+# Set working directory
+WORKDIR /workspace
+
+# Create necessary directories
+RUN mkdir -p /workspace/config
+
+# Set environment variables
+ENV ZEPHYR_VERSION=3.5
+ENV PATH="/root/.local/bin:${PATH}"
+
+# Default command (can be overridden)
+CMD ["bash"]
