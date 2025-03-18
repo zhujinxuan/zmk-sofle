@@ -1,7 +1,5 @@
 # Use the local build from zmk.dockerfile
 FROM dev AS zmk-build
-# Use the official ZMK build image that includes Zephyr, west, and other dependencies
-# FROM m.daocloud.io/docker.io/library/zmkfirmware/zmk-build-arm:stable
 
 # Optionally allow the board to be specified at build time
 ARG BOARD
