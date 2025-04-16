@@ -13,8 +13,8 @@ layers:
   - C
   - R
   - V
-  - {t: _, h: '2'}
-  - {t: /, h: layer1, s: '?'}
+  - {t: +, h: '2'}
+  - {t: _, h: layer1}
   - A
   - O
   - E
