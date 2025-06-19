@@ -91,6 +91,7 @@
     combos {
         compatible = "zmk,combos";
         combo_slash {
+            timeout-ms = <100>;
             key-positions = <15 21 9>;
             layers=<0>;
             bindings=<&kp SLASH>;
@@ -106,6 +107,7 @@
             bindings=<&kp BSLH>;
         };
         combo_pipe {
+            timeout-ms = <100>;
             key-positions = <17 23 10>;
             layers=<0>;
             bindings=<&kp PIPE>;
