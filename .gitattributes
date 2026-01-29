@@ -1,0 +1,34 @@
+# Ensure LF line endings for all text files
+* text=auto
+
+# Force LF for specific file types
+*.sh text eol=lf
+*.nu text eol=lf
+*.keymap text eol=lf
+*.dtsi text eol=lf
+*.dts text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.conf text eol=lf
+*.txt text eol=lf
+
+# Docker files
+Dockerfile text eol=lf
+.dockerignore text eol=lf
+
+# Scripts
+*.py text eol=lf
+
+# Binary files (do not modify)
+*.uf2 binary
+*.hex binary
+*.bin binary
+*.jpg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
