@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: RSFT}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: Alt+\, h: '$$mdi:gesture-tap-hold$$', s: Alt+|}
   - RESET
   layer1:
   - {t: '$$mdi:transfer$$', type: trans}
