@@ -45,8 +45,8 @@
 &lt 2 MINUS  &kp SQT    &kp COMMA     &kp DOT        &kp P            &kp Y       &kp UP_ARROW     &kp F       &kp G            &kp C               &kp R            &kp V           &lt 2 PLUS
 &lt 1 UNDER &kp A      &kp O         &kp E          &kp U             &kp I       &kp DOWN_ARROW   &kp D       &kp H            &kp T               &kp N            &kp S           &lt 1 BSLH
 &lt 3 GRAVE &kp SEMI  &kp Q         &kp J           &kp K             &kp X       &kp LEFT_ARROW   &kp B       &kp L            &kp M               &kp W            &kp Z           &lt 3 TILDE
-&kp ESC     &kp LC(LS(C)) &kp LC(LS(V)) &kp LA(BSLH)   &kp N4            &kp N5      &kp RIGHT_ARROW  &kp N6      &kp N7           &kp N8              &kp N9           &kp N0          &kp BACKSPACE
-&kp C_MUTE  &sk LCTRL  &sk LALT      &mt LGUI TAB   &mt LSHFT ESC   &mt LGUI TAB  &kp ENTER    &mt RCTRL ENTER &mt RSFT SPACE  &mt RCTRL ENTER      &sk RALT  &kp C_RESET
+&kp ESC     &kp LC(LS(C)) &kp LC(LS(V)) &kp LA(BSLH)   &kp N4            &kp N5      &kp RIGHT_ARROW  &kp N6      &kp N7        &kp N8              &kp N9           &kp N0          &kp BACKSPACE
+&kp C_MUTE  &sk LCTRL  &sk LALT      &mt LGUI TAB   &mt LSHFT ESC   &mt LGUI TAB  &kp ENTER    &mt RCTRL ENTER &mt RSFT SPACE  &mt RCTRL ENTER      &sk LA(BSLH)     &kp C_RESET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
